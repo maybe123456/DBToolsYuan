@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.administrator.dbtools.base.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:TitleBar_Background="@color/main_color"
+            app:TitleBar_LeftVisibility="invisible"
+            app:TitleBar_TextColor="@color/white"
+            app:TitleBar_Title="查号" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/clear_history"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16dp"
+                >
+
+            <EditText
+                android:id="@+id/et_input_num"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="请输入手机号"
+                android:imeOptions="actionSearch"
+                android:maxLength="11"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="#ffffff"
+                android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_get_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="查询"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="运营商：\n省份：\n城市：\n邮编：\n区号：\n"
+                android:padding="6dp"
+                android:textSize="18dp"
+                android:textColor="#666666"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

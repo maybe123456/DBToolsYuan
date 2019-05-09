@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    >
+
+    <!--<chidean.sanfangyuan.com.chideanbase.pulltorefresh.PullToRefreshListView-->
+        <!--android:id="@+id/pull_to_refresh_list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--</chidean.sanfangyuan.com.chideanbase.pulltorefresh.PullToRefreshListView>-->
+
+    <com.example.administrator.dbtools.base.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:TitleBar_Background="@color/main_color"
+        app:TitleBar_LeftVisibility="invisible"
+        app:TitleBar_TextColor="@color/white"
+        app:TitleBar_Title="笑话" />
+
+    <com.example.administrator.dbtools.sport.home.view.JokeViewPager
+        android:id="@+id/home_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+</layout>

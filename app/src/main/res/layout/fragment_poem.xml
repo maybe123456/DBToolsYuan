@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.administrator.dbtools.base.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:TitleBar_Background="@color/main_color"
+            app:TitleBar_LeftVisibility="invisible"
+            app:TitleBar_TextColor="@color/white"
+            app:TitleBar_Title="诗句" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/num_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/yayun_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/clear_history"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="16dp"
+                >
+
+            <EditText
+                android:id="@+id/et_input_word"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="请输入不多于8个文字"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="8"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:background="#ffffff"
+                android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_get_poem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="生成藏头诗"
+                    android:paddingRight="3dp"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_poem"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="6dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>
